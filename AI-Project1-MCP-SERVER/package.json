@@ -2,8 +2,9 @@
   "name": "ai-project1-mcp-server",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "dev:start": "ts-node server/index.ts",
+    "dev:start": "ts-node --loader ts-node/esm server/index.ts",
     "seed": "ts-node server/seed.ts",
     "client": "ts-node client/langchainClient.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,10 +18,11 @@
     "dotenv": "^16.4.5",
     "express": "^5.1.0",
     "langchain": "^0.3.35",
-    "node-fetch": "^3.3.2",
+    "node-fetch": "^2.7.0",
     "pg": "^8.16.3",
     "reflect-metadata": "^0.2.2",
-    "typeorm": "^0.3.27"
+    "typeorm": "^0.3.27",
+    "zod": "^3.25.76"
   },
   "devDependencies": {
     "@types/express": "^5.0.3",

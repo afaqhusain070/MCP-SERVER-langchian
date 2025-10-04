@@ -12,9 +12,9 @@ async function seed() {
 
   // Users
   const usersData = [
-    { name: "Ali Khan", email: "ali@example.com" },
-    { name: "Sara Ahmed", email: "sara@example.com" },
-    { name: "Bilal Hussain", email: "bilal@example.com" },
+    { name: "Ali Khan", email: "ali@example.com", age: 30 },
+    { name: "Sara Ahmed", email: "sara@example.com", age: 28 },
+    { name: "Bilal Hussain", email: "bilal@example.com", age: 35 },
   ];
   const users = usersData.map((data) => userRepo.create(data));
   await userRepo.save(users);
@@ -37,7 +37,6 @@ async function seed() {
   await orderRepo.save(orders);
 
   console.log("✅ Seed data inserted");
-//all done
   process.exit(0);
 }
 
