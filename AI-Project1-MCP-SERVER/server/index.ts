@@ -1,8 +1,8 @@
 import express from "express";
-import { AppDataSource } from "./data-source";
-import { User } from "./entity/User";
-import { Product } from "./entity/Product";
-import { Order } from "./entity/Order";
+import { AppDataSource } from "./data-source.js";
+import { User } from "./entity/User.js";
+import { Product } from "./entity/Product.js";
+import { Order } from "./entity/Order.js";
 
 const app = express();
 const port = 8000;
