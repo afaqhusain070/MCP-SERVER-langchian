@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
-  "scripts": {
-    "dev:start": "ts-node --loader ts-node/esm server/index.ts",
-    "seed": "ts-node server/seed.ts",
-    "client": "ts-node client/langchainClient.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "scripts": {
+  "dev:start": "node dist/server/index.js",
+  "seed": "node dist/server/seed.js",
+  "client": "node dist/client/langchainClient.js"
   },
   "keywords": [],
   "author": "",

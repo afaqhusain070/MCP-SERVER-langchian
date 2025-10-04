@@ -1,7 +1,10 @@
-import { AppDataSource } from "./data-source";
-import { User } from "./entity/User";
-import { Product } from "./entity/Product";
-import { Order } from "./entity/Order";
+import "reflect-metadata";
+
+import { AppDataSource } from "./data-source.js";
+import { User } from "./entity/User.js";
+import { Product } from "./entity/Product.js";
+import { Order } from "./entity/Order.js";
+
 
 async function seed() {
   await AppDataSource.initialize();

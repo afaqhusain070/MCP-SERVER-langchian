@@ -1,8 +1,13 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "ESNext",
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
     "esModuleInterop": true,
     "skipLibCheck": true
+  },
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
   }
 }
